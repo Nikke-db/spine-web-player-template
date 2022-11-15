@@ -1,6 +1,6 @@
 # spine-web-player-template
 A template based on the design of the live2d visualiser of the website nikke-db. Only works with animations made using the spine software.
-The template will work with any animation made from spine, not restricting to animations comming only from the game Nikke: Goddess of Victory.
+The template will work with any animation made from spine, not restricting to animations coming only from the game Nikke: Goddess of Victory.
 
 # Installation
 ```git clone https://github.com/Nikke-db/spine-web-player-template.git``` 
