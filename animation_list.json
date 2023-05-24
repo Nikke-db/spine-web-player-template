@@ -1,10 +1,12 @@
 [
     {
         "name": "Spine Boy",
-        "id": "spine_boy"
+        "id": "spine_boy",
+        "version": 4.0
     },
     {
         "name":"Neon",
-        "id":"neon"
+        "id":"neon",
+        "version": 4.1
     }
 ]

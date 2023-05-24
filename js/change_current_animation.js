@@ -2,15 +2,23 @@
 
 let current_spine = "";
 
-const change_spine = (id) => {
+const change_spine = (id, assetSpineVersion) => {
 
     if (current_spine !== ""){
         current_spine.dispose();
     }
 
+    let runtimeSpineVersion;
+
+    if (assetSpineVersion == 4.0) {
+        runtimeSpineVersion = spine40
+    } else if (assetSpineVersion == 4.1) {
+        runtimeSpineVersion = spine41
+    }
+
     document.getElementById("player-container").innerHTML = "";
 
-    current_spine = new spine.SpinePlayer("player-container", {
+    current_spine = new runtimeSpineVersion.SpinePlayer("player-container", {
         // jsonUrl: "/assets/" + id + "/" + id + ".json",
         skelUrl: "/assets/" + id + "/" + id + ".skel",
         atlasUrl: "/assets/" + id + "/" + id + ".atlas",

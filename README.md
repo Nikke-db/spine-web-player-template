@@ -1,5 +1,5 @@
 # spine-web-player-template
-A template based on the design of the live2d visualiser of the website nikke-db. Only works with animations made using the spine software.  
+A template based on the design of the live2d visualiser of the website nikke-db. Only works with animations made using the spine software and of the versions 4.0 or 4.1.
 The template will work with any animation made from spine, not restricting to animations coming only from the game Nikke: Goddess of Victory.
 
 # Installation
@@ -9,6 +9,7 @@ Or download as .zip and extract.
 # How to use
 
 In ```animation_list.json``` add a name to your animation and give it a custom ID. This ID is extremely important.  
+As of 24th may 2023 you also need to reference the spine version of the assets, in order to call the right spine player.  
 In ```/assets```, create a folder using the ID of your animation as a name.   
 Inside ```/assets/ID``` you must import a ```ID.atlas```, ```ID.png```, and ```ID.skel```.  
 Make sure the 1st line of ```ID.atlas``` have the correct name file for ```ID.png```.  

@@ -14,7 +14,7 @@ const create_list = async () => {
         liste_item.classList.add("charDiv")
 
         liste_item.addEventListener("click", ()=>{
-            change_spine(animation.id)
+            change_spine(animation.id, animation.version)
         })
 
         document.getElementById("visualiserMain").appendChild(liste_item)
