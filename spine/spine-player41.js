@@ -12247,8 +12247,8 @@ var spine41 = (() => {
           up: () => {
             if (target)
               target = null;
-            else if (config.showControls)
-              this.paused ? this.play() : this.pause();
+            // else if (config.showControls)
+            //   this.paused ? this.play() : this.pause();
           },
           dragged: (x, y) => {
             if (target) {
