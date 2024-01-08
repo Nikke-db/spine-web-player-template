@@ -63,3 +63,17 @@ body {
     transition: 0.5s;
     cursor: pointer;
 }
+
+#premutipliedToggle {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--main-dark-theme);
+    color: white;
+    padding: 10px;
+    position: absolute;
+    width: 180px;
+    margin-left: 10px;
+    top: 10vh;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left: 2px white dashed;
+}

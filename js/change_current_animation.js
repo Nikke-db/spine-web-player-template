@@ -1,12 +1,17 @@
 "use strict";
 
 let current_spine = "";
+let activeid, activeSpineVersion;
+let premultipliedAlphaValue = true;
 
 const change_spine = (id, assetSpineVersion) => {
 
     if (current_spine !== ""){
         current_spine.dispose();
     }
+
+    activeid = id
+    activeSpineVersion = assetSpineVersion
 
     let runtimeSpineVersion;
 
@@ -24,7 +29,11 @@ const change_spine = (id, assetSpineVersion) => {
         atlasUrl: "/assets/" + id + "/" + id + ".atlas",
         backgroundColor: "2f353a",
         alpha: false,
-        preserveDrawingBuffer:true
+        premultipliedAlpha:  premultipliedAlphaValue,
+        preserveDrawingBuffer:true,
+        success: function (player) {
+            player.play();
+         }
     });
 
     //very important or there'll be some annoying issue when zooming in and out
@@ -34,4 +43,8 @@ const change_spine = (id, assetSpineVersion) => {
     document.querySelector(".spine-player-canvas").style.width = null
 
     document.querySelector(".spine-player-canvas").style.display = "inline"
+}
+
+const reloadSpine = () => {
+    change_spine(activeid, activeSpineVersion)
 }

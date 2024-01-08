@@ -29,7 +29,7 @@ You can zoom using the scrool wheel, and click + drag to move the animation arou
 
 # Json vs Skel
 
-By default, the program works with .skel files. If you use .json files for your animations, please go to ```js/change_current_animation.js```, uncomment line 14 and comment line 15.
+By default, the program works with .skel files. If you use .json files for your animations, please go to ```js/change_current_animation.js```, uncomment line 27 and comment line 28.
 
 # Credits
 
