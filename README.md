@@ -35,3 +35,12 @@ By default, the program works with .skel files. If you use .json files for your 
 
 Spine web player made by esoteric software, learn more about it at http://esotericsoftware.com/spine-player.  
 Template made by Koshirei https://github.com/Koshirei and used for the Nikke-db website https://github.com/Nikke-db/Nikke-db.github.io.
+
+
+
+# Archive notice
+
+As of March 8th 2026 this repository will be archived.  
+It was a small side project dedicated to a couple Nikke modders in the early life of the game, but as time progressed other alternatives appeared and a similar feature was even added to the main project, nikke-db.  
+Furthermore the "UI" aspect of the template was based on the 2022 version of the website, which has gotten heavely revamped over time.  
+As such, I advise using nikke-db as an alternative. The main wesite offers much more tools at your disposal, and don't require git knowledge to even setup, just a website URL.
